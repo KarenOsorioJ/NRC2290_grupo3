@@ -15,13 +15,13 @@ class _ConvertirState extends State<Convertir> {
 /*
         0-COP      1-USD      2-EUR
 
-0-COP     1       4000        5000 
+0-COP     1       4974        4955 
 
 
-1-USD  0.00025      1         1.25
+1-USD  1/4974      1         4955/4974
  
 
-2-EUR  0.0002      0.8           1 
+2-EUR  1/4955      4974/4955           1 
 
  */
 
@@ -279,7 +279,7 @@ class Monedas extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: CircleAvatar(
         radius: 15,
-        backgroundColor: moneda ? Colors.red : Colors.purple ,     child: Text(
+        backgroundColor: moneda ? Colors.pink : Colors.purple ,     child: Text(
           texto,
           style: const TextStyle(color: Colors.white, fontSize: 20),
         ),
